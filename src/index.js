@@ -2,19 +2,28 @@ import React from "react";
 import reactDom from "react-dom";
 import "./index.css";
 
+function Tast(props){
+
+
+
+return(
+
+  <li className="tasks-item">
+     {props.taskName}
+    </li>
+    
+    
+);
+}
+
 
 function TaskLsist() {
 return(
     <ul>
-    <li className="tasks-item">
-       pagbilan yelo
-    </li>
-    <li className="tasks-item">
-        kumain kanaba
-    </li>
-    <li className="tasks-item">
-        ako oo
-    </li>
+  <Tast taskName="yeloyeloyelo"/>
+  <Tast  taskName="ice ice ice"/>
+  <Tast  taskName="2big tubeg tobeg"/>
+  
 </ul>  
 );
 }
