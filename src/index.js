@@ -2,6 +2,24 @@ import React from "react";
 import reactDom from "react-dom";
 import "./index.css";
 
+
+function TaskLsist() {
+return(
+    <ul>
+    <li className="tasks-item">
+       pagbilan yelo
+    </li>
+    <li className="tasks-item">
+        kumain kanaba
+    </li>
+    <li className="tasks-item">
+        ako oo
+    </li>
+</ul>  
+);
+}
+
+
 function HelloWorld(){
     return <div className="app">
         <header className="app-header">
@@ -10,18 +28,8 @@ function HelloWorld(){
             <p>
             The most simple and amazing todo-list React app.
             </p>
-        
-            <ul>
-                <li className="tasks-item">
-                   pagbilan yelo
-                </li>
-                <li className="tasks-item">
-                    kumain kanaba
-                </li>
-                <li className="tasks-item">
-                    ako oo
-                </li>
-            </ul>  
+        <TaskLsist />
+          
         </header>
     </div>
 }
