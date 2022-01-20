@@ -5,11 +5,24 @@ import "./index.css";
 function HelloWorld(){
     return <div className="app">
         <header className="app-header">
-            My Amazing To-do-list
+           <h1> My Amazing To-do-list</h1>
       
-        <p>
+            <p>
             The most simple and amazing todo-list React app.
-        </p>  </header>
+            </p>
+        
+            <ul>
+                <li className="tasks-item">
+                   pagbilan yelo
+                </li>
+                <li className="tasks-item">
+                    kumain kanaba
+                </li>
+                <li className="tasks-item">
+                    ako oo
+                </li>
+            </ul>  
+        </header>
     </div>
 }
 
