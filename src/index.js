@@ -20,14 +20,21 @@ return(
 function TaskLsist() {
 
     const taskItemList = ["yeloyeloyelo", "ice ice ice", "2big tubeg tobeg", "HAHAHHAHokay"];
+
+
+
+
 return(
+
+    <div>
+        <input className="task-input" />
     <ul>
  {taskItemList.map((task, index ) => {
      
      return <Tast key ={index} taskName={task} />; //bangis nag uupdate
  })}
 
-</ul>  
+</ul>  </div>
 );
 }
 
