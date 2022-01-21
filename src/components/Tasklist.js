@@ -6,7 +6,7 @@ import Task from "./Task";
 
 function TaskList() {
     
-const [taskItemList, setTaskItemList] = useState (["yeloyeloyelo", "ice ice ice", "2big tubeg tobeg", "HAHAHHAHokay", "kaan2k taena"]);
+const [taskItemList, setTaskItemList] = useState (["yeloyeloyelo", "ice ice ice", "2big tubeg tobeg", "HAHAHHAHokay", "kaan2k somuch"]);
    
 
     const [taskValue, setTaskValue] = useState("isa pang task");
@@ -20,6 +20,7 @@ const [taskItemList, setTaskItemList] = useState (["yeloyeloyelo", "ice ice ice"
 
     const addTaskHandler = (e) =>{
         setTaskItemList([taskValue, ...taskItemList])
+        setTaskValue("");
     }
     
 
@@ -33,6 +34,7 @@ return(
         placeholder="Create new task"
         onChange={inputChangeHandler}
         onBlur={addTaskHandler}
+        value={taskValue}
         />
 
     <ul>
