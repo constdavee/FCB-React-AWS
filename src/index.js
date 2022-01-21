@@ -1,42 +1,11 @@
 import React from "react";
 import reactDom from "react-dom";
 import "./index.css";
-
-function Tast(props){
-
-
-
-return(
-
-  <li className="tasks-item">
-     {props.taskName}
-    </li>
-    
-    
-);
-}
-
-
-function TaskLsist() {
-
-    const taskItemList = ["yeloyeloyelo", "ice ice ice", "2big tubeg tobeg", "HAHAHHAHokay"];
+import Task from "./components/Task"
+import TaskList from "./components/Tasklist";
 
 
 
-
-return(
-
-    <div>
-        <input className="task-input" />
-    <ul>
- {taskItemList.map((task, index ) => {
-     
-     return <Tast key ={index} taskName={task} />; //bangis nag uupdate
- })}
-
-</ul>  </div>
-);
-}
 
 
 function HelloWorld(){
@@ -47,8 +16,9 @@ function HelloWorld(){
             <p>
             The most simple and amazing todo-list React app.
             </p>
-        <TaskLsist />
-          
+            <Task />
+        <TaskList />
+        
         </header>
     </div>
 }
