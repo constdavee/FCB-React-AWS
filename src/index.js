@@ -18,12 +18,15 @@ return(
 
 
 function TaskLsist() {
+
+    const taskItemList = ["yeloyeloyelo", "ice ice ice", "2big tubeg tobeg", "HAHAHHAHokay"];
 return(
     <ul>
-  <Tast taskName="yeloyeloyelo"/>
-  <Tast  taskName="ice ice ice"/>
-  <Tast  taskName="2big tubeg tobeg"/>
-  
+ {taskItemList.map((task, index ) => {
+     
+     return <Tast key ={index} taskName={task} />; //bangis nag uupdate
+ })}
+
 </ul>  
 );
 }
